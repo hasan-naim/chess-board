@@ -1,0 +1,34 @@
+.chess-board{
+    display: flex;
+    gap: 5px    ;
+}
+
+.inner-chess{
+    width: 75px;
+
+    background: rgb(26, 14, 14);
+    /* display: flex;
+    flex-direction: row; */
+    /* gap: 5px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.inner-chess:nth-child(2n){
+    flex-direction: column-reverse;
+}
+
+.square{
+    width: 100%;
+    height: 75px;
+    background: saddlebrown;
+}
+
+
+.square:nth-child(2n){
+    background: rgb(255, 255, 255);
+}
+.square:nth-child(2n + 1){
+    background: rgb(37, 37, 37);
+} 
